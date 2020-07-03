@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h3>Name: <%= @recipe.name%></h3>
 <p>Ingredients</p>
 <p><%= @recipe.ingredients%></p>
@@ -6,4 +7,14 @@
 <form action="/recipes/<%= @recipe.id %>" method="post">
   <input id="hidden" type="hidden" name="_method" value="delete">
   <input type="submit" value="delete">
+=======
+<h3>Name: <%= @recipe.name%></h3>
+<p>Ingredients</p>
+<p><%= @recipe.ingredients%></p>
+<p>Cooking Time: <%= @recipe.cook_time%></p>
+
+<form action="/recipes/<%= @recipe.id %>" method="post">
+  <input id="hidden" type="hidden" name="_method" value="delete">
+  <input type="submit" value="delete">
+>>>>>>> d944b26f1eac704699f82e8784d4e3b4e3fd2f15
 </form>
